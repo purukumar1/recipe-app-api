@@ -9,6 +9,7 @@ from django.contrib.auth import (
 
 from django.utils.translation import gettext as _
 
+
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for the user object."""
 
@@ -31,6 +32,7 @@ class UserSerializer(serializers.ModelSerializer):
             user.save()
 
         return user
+
 
 class AuthTokenSerializer(serializers.Serializer):
     """Serializer for the user authentication object."""
